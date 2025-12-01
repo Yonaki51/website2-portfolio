@@ -2,29 +2,138 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <script src="/assets/js/script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Yoni</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        
-    </main>
-    <footer>
 
+    <!-- HEADER -->
+    <header>
+        <div class="header-inner">
+            <div class="header-left">
+                <img src="assets/img/angle-brackets-parentheses-icon.webp" alt="Logo" class="logo">
+                <span class="title">portfolio</span>
+            </div>
+
+            <nav class="header-right">
+                <ul>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <h1>Hi I'm Yoni</h1>
+                <p class="subtitle">an upcoming developer</p>
+
+                <div class="snippet">
+                    <pre><code>const developer = {
+  name: "yoni",
+  skills: ["java", "html/css", "python"],
+  passion: "solving problems"
+};</code></pre>
+                </div>
+
+                <a href="#" class="btn">download cv</a>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>about me</h2>
+                <p class="about-text">
+                    I am a passionate and motivated developer focused on building user-friendly and visually refined
+                    projects.
+                    My goal is to continue learning and improving my skills in front-end and back-end development, and
+                    to
+                    apply these in real-world applications.
+                </p>
+
+                <div class="about-buttons">
+                    <button>front-end experience</button>
+                    <button>choose my programming</button>
+                    <button>download my cv</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>featured projects</h2>
+
+                <div class="project-grid">
+                    <div class="card">
+                        <img src="assets/img/Mastermind_game_start_screen_snapshot.png" alt="Project 1">
+                        <h3>mastermind game</h3>
+                        <p>A full logic-based puzzle game written in Java.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/img/portfolio-example.jpg" alt="Project 2">
+                        <h3>Pink Goose website</h3>
+                        <p>Fully responsive custom-built website design.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/img/pinkgoose.png" alt="Project 3">
+                        <h3>developer portfolio</h3>
+                        <p>A clean and modern developer portfolio layout.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>skills and experience</h2>
+
+                <div class="skill-grid">
+                    <div class="skill-box">programming languages</div>
+                    <div class="skill-box">frontend development</div>
+                    <div class="skill-box">software fundamentals</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>reach out</h2>
+
+                <form class="contact-form">
+                    <input type="text" placeholder="your name">
+                    <input type="email" placeholder="your email">
+                    <input type="text" placeholder="subject">
+                    <textarea placeholder="your message"></textarea>
+                    <button type="submit">send message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-inner">
+            <p>© 2025 Yoni. All rights reserved.</p>
+            <p>built with html & css</p>
+        </div>
     </footer>
 
 </body>
