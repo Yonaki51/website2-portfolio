@@ -129,6 +129,7 @@ header {
     border-radius: 8px;
     width: max-content;
     margin: 0 auto 30px;
+    font-size: 1.5rem;
     color: #38bdf8;
     text-align: left;
 }
@@ -251,6 +252,7 @@ font-size: 1.5rem;
     background: #0f172a;
     border: 1px solid #1e293b;
     color: #e2e8f0;
+    font-size: 1.5rem;
     border-radius: 6px;
 }
 
@@ -260,6 +262,7 @@ font-size: 1.5rem;
     padding: 14px;
     border: none;
     border-radius: 6px;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
