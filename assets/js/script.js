@@ -1,18 +1,3 @@
-const text = "an upcoming developer";
-let index = 0;
-
-function typeEffect() {
-    const subtitle = document.querySelector(".subtitle");
-    subtitle.textContent = text.slice(0, index);
-    index++;
-
-    if (index <= text.length) {
-        setTimeout(typeEffect, 90); // snelheid per letter
-    }
-}
-
-window.addEventListener("DOMContentLoaded", typeEffect);
-
 const snippetText = 
 `const developer = {
   name: "yoni",
@@ -28,7 +13,7 @@ function typeSnippet() {
     snippetIndex++;
 
     if (snippetIndex <= snippetText.length) {
-        setTimeout(typeSnippet, 90); // snelheid per teken
+        setTimeout(typeSnippet, 70); // snelheid per teken
     }
 }
 
