@@ -143,9 +143,10 @@ header {
     color: #38bdf8;
     padding: 26px 32px;
     border-radius: 10px;
-    width: fit-content;
+    width: 580px;
+    height: 250px;
     margin: 0 auto 40px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+
 }
 
 
@@ -224,6 +225,7 @@ font-size: 1.5rem;
 
 .card img {
     width: 100%;
+    height: 70%;
     border-radius: 6px;
     margin-bottom: 10px;
 }
