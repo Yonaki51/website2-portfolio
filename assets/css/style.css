@@ -7,6 +7,8 @@
 
 html {
     font-size: 18px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 
@@ -16,6 +18,7 @@ body {
     color: #ffffff;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+    padding-top: 80px;
 }
 
 h1,
@@ -47,7 +50,13 @@ header {
     border-bottom: 1px solid #1e293b;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
+
 
 .header-inner {
     width: 100%;
@@ -135,7 +144,8 @@ header {
 }
 
 #snippet {
-    white-space: pre;        /* behoudt enters en spaties */
+    white-space: pre;
+    /* behoudt enters en spaties */
     font-family: "Fira Code", monospace;
     font-size: 1.25rem;
     line-height: 1.6;
@@ -167,8 +177,8 @@ header {
     text-align: center;
 }
 
-.about p{
-font-size: 1.5rem;
+.about p {
+    font-size: 1.5rem;
 }
 
 .about-text {
@@ -230,24 +240,66 @@ font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-/* SKILLS */
-.skills {
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.skill-grid {
-    margin-top: 40px;
+.skills-grid {
     display: grid;
-    gap: 20px;
     grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    /* zorg dat er maar 1 dropdown tegelijk opent */
+    align-items: start;
 }
 
-.skill-box {
-    background: #11203f;
-    padding: 20px;
-    border-radius: 8px;
+
+.skill-item {
+    background: #0e1a33;
+    border: 1px solid #1e2a45;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
 }
+
+.skill-item:hover {
+    border-color: #38bdf8;
+}
+
+.skill-header {
+    width: 100%;
+    padding: 22px 28px;
+    background: none;
+    border: none;
+    color: #e2e8f0;
+    text-align: left;
+    font-size: 1.35rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-header .arrow {
+    transition: transform 0.3s ease;
+}
+
+.skill-item.active .arrow {
+    transform: rotate(180deg);
+}
+
+.skill-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 28px;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    font-size: 1.15rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.skill-item.active .skill-content {
+    max-height: 300px;
+    padding: 20px 28px 28px;
+}
+
+
 
 /* CONTACT */
 .contact {
