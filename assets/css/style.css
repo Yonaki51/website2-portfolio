@@ -363,10 +363,6 @@ header {
     cursor: pointer;
 }
 
-/* Placeholder-kleur voor eerste optie */
-.contact-form select:invalid {
-    color: grey;
-}
 
 /* Dropdown opties */
 .contact-form option {
