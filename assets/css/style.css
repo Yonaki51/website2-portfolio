@@ -350,6 +350,30 @@ header {
     font-weight: 600;
 }
 
+.contact-form select {
+    padding: 14px;
+    font-family: 'Inter', sans-serif;
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    color: grey;
+    font-size: 1.3rem;
+    border-radius: 6px;
+    appearance: none;
+    /* verwijdert standaard browser stijl */
+    cursor: pointer;
+}
+
+/* Placeholder-kleur voor eerste optie */
+.contact-form select:invalid {
+    color: grey;
+}
+
+/* Dropdown opties */
+.contact-form option {
+    background: #0f172a;
+}
+
+
 /* ============================
    FOOTER
 =============================== */

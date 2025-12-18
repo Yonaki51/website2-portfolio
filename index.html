@@ -142,11 +142,31 @@
                 <h2>reach out</h2>
 
                 <form class="contact-form">
-                    <input type="email" placeholder="your email">
-                    <input type="text" placeholder="subject">
-                    <textarea placeholder="your message"></textarea>
+                    <input type="email" placeholder="your email" required>
+
+                    <select required>
+                        <option value="" disabled selected>
+                            reason for contact
+                        </option>
+                        <option value="job">
+                            job opportunity
+                        </option>
+                        <option value="freelance">
+                            freelance project
+                        </option>
+                        <option value="question">
+                            general question
+                        </option>
+                        <option value="other">
+                            something else
+                        </option>
+                    </select>
+
+                    <textarea placeholder="your message" required></textarea>
+
                     <button type="submit">send message</button>
                 </form>
+
             </div>
         </section>
 
