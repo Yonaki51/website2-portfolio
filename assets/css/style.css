@@ -358,8 +358,8 @@ header {
     color: grey;
     font-size: 1.3rem;
     border-radius: 6px;
-    appearance: none;
     /* verwijdert standaard browser stijl */
+    appearance: none;
     cursor: pointer;
 }
 
