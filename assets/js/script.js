@@ -13,7 +13,7 @@ function typeSnippet() {
   snippetIndex++;
 
   if (snippetIndex <= snippetText.length) {
-    setTimeout(typeSnippet, 70); // snelheid per teken
+    setTimeout(typeSnippet, Math.floor(Math.random() * 250)); // snelheid per teken
   }
 }
 
