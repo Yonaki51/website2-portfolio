@@ -206,39 +206,62 @@ header {
     gap: 30px;
 }
 
+
+/* PROJECT CARDS (readability upgrade) */
 .card {
-    background: #11203f;
-    padding: 16px;
-    border-radius: 8px;
+  background: #11203f;
+  border: 1px solid #1e2a45;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
-.card img {
-    width: 100%;
-    height: 250px;
-    /* standaard hoogte voor desktop */
-    object-fit: cover;
-    border-radius: 6px;
-    display: block;
+.card-header {
+  padding: 18px 18px 0;
 }
 
-/* Responsiveness fix: lagere hoogte op kleinere schermen */
-@media (max-width: 1100px) {
-    .card img {
-        height: 180px;
-    }
+.card-header h3 {
+  margin: 0;
 }
 
-@media (max-width: 800px) {
-    .card img {
-        height: 150px;
-    }
+.project-meta {
+  margin: 8px 0 14px;
+  font-size: 0.95rem;
+  color: #94a3b8;
 }
 
-@media (max-width: 600px) {
-    .card img {
-        height: 130px;
-    }
+.card-media {
+  aspect-ratio: auto;
+  background: #0f172a;
+  margin-bottom: 2%;
 }
+
+.card-media img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Specifiek voor die Mastermind screenshot */
+.project-img--top {
+  object-position: center top;
+}
+
+.card-body {
+  padding: 16px 18px 20px;
+}
+
+.project-desc {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.45;
+  color: #cbd5e1;
+}
+
 
 
 
@@ -368,6 +391,7 @@ header {
 .contact-form option {
     background: #0f172a;
 }
+
 
 
 /* ============================
