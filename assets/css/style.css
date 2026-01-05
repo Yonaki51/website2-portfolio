@@ -30,25 +30,27 @@ h3 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: clamp(32px, 7vw, 72px);
     margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 2.2rem;
+    font-size: clamp(22px, 4.8vw, 40px);
     margin-bottom: 30px;
 }
 
 h3 {
-    font-size: 1.4rem;
+    font-size: clamp(18px, 3.2vw, 26px);
     margin-bottom: 12px;
 }
 
+
 .container {
-    max-width: 2000px;
+    width: min(1100px, 100%);
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 clamp(16px, 4vw, 40px);
 }
+
 
 /* ============================
    HEADER
@@ -209,57 +211,57 @@ header {
 
 /* PROJECT CARDS (readability upgrade) */
 .card {
-  background: #11203f;
-  border: 1px solid #1e2a45;
-  border-radius: 12px;
-  overflow: hidden;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
+    background: #11203f;
+    border: 1px solid #1e2a45;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-header {
-  padding: 18px 18px 0;
+    padding: 18px 18px 0;
 }
 
 .card-header h3 {
-  margin: 0;
+    margin: 0;
 }
 
 .project-meta {
-  margin: 8px 0 14px;
-  font-size: 0.95rem;
-  color: #94a3b8;
+    margin: 8px 0 14px;
+    font-size: 0.95rem;
+    color: #94a3b8;
 }
 
 .card-media {
-  aspect-ratio: auto;
-  background: #0f172a;
-  margin-bottom: 2%;
+    aspect-ratio: auto;
+    background: #0f172a;
+    margin-bottom: 2%;
 }
 
 .card-media img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  object-position: center;
-  display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 /* Specifiek voor die Mastermind screenshot */
 .project-img--top {
-  object-position: center top;
+    object-position: center top;
 }
 
 .card-body {
-  padding: 16px 18px 20px;
+    padding: 16px 18px 20px;
 }
 
 .project-desc {
-  margin: 0;
-  font-size: 1.1rem;
-  line-height: 1.45;
-  color: #cbd5e1;
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.45;
+    color: #cbd5e1;
 }
 
 
