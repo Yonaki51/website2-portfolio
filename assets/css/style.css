@@ -11,7 +11,6 @@ html {
     font-size: 18px;
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
-    /* voorkomt header overlap */
 }
 
 body {
@@ -20,7 +19,6 @@ body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     padding-top: 80px;
-    /* ruimte voor fixed header */
 }
 
 h1,
@@ -44,13 +42,11 @@ h3 {
     margin-bottom: 12px;
 }
 
-
 .container {
     width: min(1100px, 100%);
     margin: 0 auto;
     padding: 0 clamp(16px, 4vw, 40px);
 }
-
 
 /* ============================
    HEADER
@@ -82,7 +78,6 @@ header {
     gap: 10px;
 }
 
-
 .logo {
     width: 28px;
     height: 28px;
@@ -93,8 +88,6 @@ header {
     color: #cbd5e1;
     letter-spacing: 1px;
 }
-
-
 
 .header-right ul {
     display: flex;
@@ -147,7 +140,6 @@ header {
     overflow: auto;
 }
 
-
 .btn {
     display: inline-block;
     padding: 12px 28px;
@@ -198,9 +190,6 @@ header {
     color: #0f172a;
 }
 
-
-
-
 /* ============================
    PROJECTS SECTION
 =============================== */
@@ -219,8 +208,7 @@ header {
     gap: 30px;
 }
 
-
-/* PROJECT CARDS (readability upgrade) */
+/* PROJECT CARDS */
 .card {
     background: #11203f;
     border: 1px solid #1e2a45;
@@ -259,7 +247,6 @@ header {
     display: block;
 }
 
-/* Specifiek voor die Mastermind screenshot */
 .project-img--top {
     object-position: center top;
 }
@@ -275,21 +262,6 @@ header {
     color: #cbd5e1;
 }
 
-
-
-
-
-
-.card p {
-    font-size: 1.1rem;
-    line-height: 1.4;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
-    /* nette afbreking */
-}
-
-
 /* ============================
    SKILLS / ACCORDION
 =============================== */
@@ -299,7 +271,6 @@ header {
     gap: 25px;
     align-items: start;
 }
-
 
 .skill-item {
     background: #0e1a33;
@@ -401,7 +372,6 @@ header {
     color: grey;
     font-size: clamp(16px, 4vw, 20px);
     border-radius: 6px;
-    /* verwijdert standaard browser stijl */
     appearance: none;
     cursor: pointer;
 }
@@ -412,8 +382,6 @@ header {
 .contact-form option {
     background: #0f172a;
 }
-
-
 
 /* ============================
    FOOTER
@@ -427,10 +395,10 @@ footer {
 }
 
 /* ============================
-   MEDIA QUERRY'S
+   MEDIA QUERIES
 =============================== */
 
-/* flexibele header */
+/* Flexible header */
 @media (max-width: 700px) {
     header {
         height: auto;
@@ -452,8 +420,7 @@ footer {
     }
 }
 
-
-/* flexibele about buttons */
+/* Flexible about buttons */
 @media (max-width: 600px) {
     .about-buttons button {
         width: 100%;
@@ -461,21 +428,21 @@ footer {
     }
 }
 
-/* flexibele skills grid (tablet) */
+/* Flexible skills grid (tablet) */
 @media (min-width: 700px) {
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* flexibele skills grid (desktop) */
+/* Flexible skills grid (desktop) */
 @media (min-width: 1000px) {
     .skills-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/* flexibele hero */
+/* Flexible hero */
 @media (max-width: 600px) {
     .hero {
         padding: 90px 16px 90px;

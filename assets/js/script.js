@@ -1,10 +1,10 @@
-const snippetText =
-  `const developer = {
+const snippetText = `const developer = {
   name: "yoni",
   skills: ["java", "html/css", "python"],
   passion: "solving problems"
 };`;
 
+const TYPING_SPEED_MAX = 250;
 let snippetIndex = 0;
 
 function typeSnippet() {
@@ -13,26 +13,25 @@ function typeSnippet() {
   snippetIndex++;
 
   if (snippetIndex <= snippetText.length) {
-    setTimeout(typeSnippet, Math.floor(Math.random() * 250)); // snelheid per teken
+    setTimeout(typeSnippet, Math.floor(Math.random() * TYPING_SPEED_MAX));
   }
 }
 
 window.addEventListener("DOMContentLoaded", typeSnippet);
 
-// dropdown
+// Skill accordion toggle
 document.querySelectorAll(".skill-header").forEach(header => {
     header.addEventListener("click", () => {
-        
         const clickedItem = header.parentElement;
 
-        // Sluit ALLE skill-items behalve degene waarop is geklikt
+        // Close all skill items except the clicked one
         document.querySelectorAll(".skill-item").forEach(item => {
             if (item !== clickedItem) {
                 item.classList.remove("active");
             }
         });
 
-        // Toggle alleen het geklikte item
+        // Toggle the clicked item
         clickedItem.classList.toggle("active");
     });
 });
