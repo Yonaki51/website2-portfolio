@@ -82,6 +82,7 @@ header {
     gap: 10px;
 }
 
+
 .logo {
     width: 28px;
     height: 28px;
@@ -92,6 +93,8 @@ header {
     color: #cbd5e1;
     letter-spacing: 1px;
 }
+
+
 
 .header-right ul {
     display: flex;
@@ -180,8 +183,8 @@ header {
 }
 
 .about-buttons button {
-    padding: 12px 32px;
-    font-size: 1.3rem;
+    padding: 12px 24px;
+    font-size: clamp(16px, 3.8vw, 20px);
     background: #1f2f52;
     border: 1px solid #2c3f65;
     color: #e2e8f0;
@@ -194,6 +197,9 @@ header {
     background: #38bdf8;
     color: #0f172a;
 }
+
+
+
 
 /* ============================
    PROJECTS SECTION
@@ -289,10 +295,11 @@ header {
 =============================== */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 25px;
     align-items: start;
 }
+
 
 .skill-item {
     background: #0e1a33;
@@ -366,7 +373,7 @@ header {
     background: #0f172a;
     border: 1px solid #1e293b;
     color: #e2e8f0;
-    font-size: 1.5rem;
+    font-size: clamp(16px, 4vw, 20px);
     border-radius: 6px;
 }
 
@@ -376,7 +383,7 @@ header {
     padding: 14px;
     border: none;
     border-radius: 6px;
-    font-size: 1.5rem;
+    font-size: clamp(16px, 4vw, 20px);
     font-weight: 600;
 }
 
@@ -384,14 +391,21 @@ header {
     padding: 14px;
     font-family: 'Inter', sans-serif;
     background: #0f172a;
+    background-image: linear-gradient(45deg, transparent 50%, #94a3b8 50%),
+        linear-gradient(135deg, #94a3b8 50%, transparent 50%);
+    background-position: calc(100% - 22px) 50%, calc(100% - 16px) 50%;
+    background-size: 6px 6px, 6px 6px;
+    background-repeat: no-repeat;
+    padding-right: 44px;
     border: 1px solid #1e293b;
     color: grey;
-    font-size: 1.3rem;
+    font-size: clamp(16px, 4vw, 20px);
     border-radius: 6px;
     /* verwijdert standaard browser stijl */
     appearance: none;
     cursor: pointer;
 }
+
 
 
 /* Dropdown opties */
@@ -410,4 +424,65 @@ footer {
     color: #64748b;
     border-top: 1px solid #1e293b;
     margin-top: 60px;
+}
+
+/* ============================
+   MEDIA QUERRY'S
+=============================== */
+
+/* flexibele header */
+@media (max-width: 700px) {
+    header {
+        height: auto;
+    }
+
+    .header-inner {
+        padding: 10px 16px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .header-right ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .title {
+        display: none;
+    }
+}
+
+
+/* flexibele about buttons */
+@media (max-width: 600px) {
+    .about-buttons button {
+        width: 100%;
+        max-width: 520px;
+    }
+}
+
+/* flexibele skills grid (tablet) */
+@media (min-width: 700px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* flexibele skills grid (desktop) */
+@media (min-width: 1000px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* flexibele hero */
+@media (max-width: 600px) {
+    .hero {
+        padding: 90px 16px 90px;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        margin-bottom: 24px;
+    }
 }
