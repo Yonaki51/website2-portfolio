@@ -262,7 +262,7 @@ header {
 }
 
 .card-media .project-img--contain {
-    object-fit: contain !important;
+    object-fit: contain;
 }
 
 .card-body {
