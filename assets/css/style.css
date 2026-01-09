@@ -263,6 +263,7 @@ header {
 
 .card-media .project-img--contain {
     object-fit: contain;
+    background-color: #0a1117;
 }
 
 .card-body {
