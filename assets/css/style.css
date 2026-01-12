@@ -172,13 +172,14 @@ header {
 }
 
 .btn--secondary {
-    background: transparent;
-    color: #e2e8f0;
-    border: 1px solid #2c3f65;
+    background: rgba(56, 189, 248, 0.12); /* subtle blue background */
+    color: #38bdf8;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
 
 .btn--secondary:hover {
-    border-color: #38bdf8;
+    background: rgba(56, 189, 248, 0.22);
     color: #38bdf8;
 }
 
