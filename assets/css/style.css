@@ -150,6 +150,13 @@ header {
     overflow: auto;
 }
 
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
 .btn {
     display: inline-block;
     padding: 12px 28px;
@@ -158,6 +165,21 @@ header {
     text-decoration: none;
     border-radius: 6px;
     font-weight: 600;
+}
+
+.btn:hover {
+    filter: brightness(1.05);
+}
+
+.btn--secondary {
+    background: transparent;
+    color: #e2e8f0;
+    border: 1px solid #2c3f65;
+}
+
+.btn--secondary:hover {
+    border-color: #38bdf8;
+    color: #38bdf8;
 }
 
 /* ============================
