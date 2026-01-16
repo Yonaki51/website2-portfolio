@@ -300,6 +300,34 @@ header {
     color: #cbd5e1;
 }
 
+.card-actions {
+    margin-top: 14px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #94a3b847;
+    background: #0f172a59;
+    color: #e2e8f0e6;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.card-link:hover {
+    background: #38bdf814;
+    border-color: #38bdf859;
+    transform: translateY(-1px);
+}
+
 /* ============================
    SKILLS / ACCORDION
 =============================== */
