@@ -460,6 +460,52 @@ footer {
     margin-top: 60px;
 }
 
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.footer-github,
+.footer-linkedin {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background: transparent;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+
+.footer-social__icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+}
+
+.footer-linkedin:hover .footer-social__icon {
+    opacity: 1;
+}
+
+.footer-github:hover .footer-social__icon {
+    opacity: 1;
+}
+
 /* ============================
    MEDIA QUERIES
 =============================== */
